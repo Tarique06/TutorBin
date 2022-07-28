@@ -80,4 +80,17 @@ module.exports = {
       res.status(500).json({ success: false, error: "Something went wrong" });
     }
   },
+
+  async deleteUser(req, res) {
+    try {
+      let userDeleted = await Model.User.deleteOne({ _id: req.params._id });
+      res.status(202).json({
+        userDeleted,
+        message: "User Deleted",
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ success: false, error: "Something went wrong" });
+    }
+  },
 };
