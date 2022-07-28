@@ -1,0 +1,23 @@
+{
+  "name": "tutorbin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarique06/TutorBin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarique06/TutorBin/issues"
+  },
+  "homepage": "https://github.com/Tarique06/TutorBin#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0"
+  }
+}
