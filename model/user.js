@@ -28,14 +28,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-userSchema.set("toJSON", {
-  virtuals: false,
-  transform: (doc, ret, options) => {
-    delete ret.password;
-    delete ret.__v;
-  },
-});
-
 userSchema.pre("save", function (next) {
   bcrypt.genSalt(10, (error, salt) => {
     if (error) return console.log(error);
