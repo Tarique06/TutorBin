@@ -6,6 +6,7 @@ const connectDB = () => {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   });
+  console.log("random commit");
   console.log("DB connected..!");
 
   console.log("tarique");
