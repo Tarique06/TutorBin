@@ -7,6 +7,8 @@ const connectDB = () => {
     useNewUrlParser: true,
   });
   console.log("DB connected..!");
+  console.log("hi");
+  console.log("shubham here");
 };
 
 module.exports = connectDB;
