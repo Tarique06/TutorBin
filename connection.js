@@ -8,8 +8,7 @@ const connectDB = () => {
   });
   console.log("random commit");
   console.log("DB connected..!");
-
-  console.log("tarique");
+  console.log("tarique hey");
 };
 
 module.exports = connectDB;
