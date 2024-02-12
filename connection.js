@@ -7,6 +7,7 @@ const connectDB = () => {
     useNewUrlParser: true,
   });
   console.log("DB connected..!");
+
   console.log("tarique");
 };
 
